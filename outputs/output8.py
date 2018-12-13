@@ -1,0 +1,25 @@
+#-*-coding:L1-*-
+import json as j,sys
+from functools import *
+M=map
+L=list
+_,I,O=sys.argv
+I,J=L(M(sorted,j.load(open(I))))
+T=r"ºOş#¼êVv­Çš—Ğ–«¡aŞ›~pŸf¤¢7¡VªóiE›Z´fõ÷LñÑíYª\mGî<5¾ÛâV+åÊ+/{_48ç¨·ÛÇ}Şû+äóÊÈ\“¢¸‘v»Sd:º”ŞG¯H5È¯’{Â´_3…÷í”‹¾úúÇjÆ€zÛ_‘a%vLú<ê8PE?«®í8ù4PS„Ånju?Ã>Â¾/ş2ş'şv&şê,ş†xş­©†&ş83şà§6œÆ+|f¢{ã+”Ù—Š@/şu,ş;öş6]ş`<(|ÒsÔ3OÒC´Ÿ|K¢3_Ø¤6şWş¢şUş,ş´;ş…ş«D7R¨%şâş#ïğğbÎN¦úŠºıÂµ®Õt2ÓãMmfqëÀÆ¦«8v®²‰3+‰‡¾Cc×úõ‡™5ÎÄÍ½àz6ÉŠzã¬çNÍ›ñÑ Î”nGÙí¡ÓG·²q£êì…YÕšÕí©Â&ûÄR:Z¶°ïĞ4 Pår­`ŞIhŠ`¨ÖĞ°Ê4gºÒJkŠG¡]íiKœş$şµ-ş#".split("ş")
+E=[1]
+for i in range(1,167940):E+=[E[i-1]*219]
+def D(v):return sum(E[i]*(ord(c)-35)for i,c in enumerate(v))
+F=[1]
+for i in range(1,187):F+=[F[i-1]*i]
+def A(X,j):
+ if j>=187:return 0
+ r=X[0]//F[j];X[0]-=r*F[j];return r
+def C(r,V,k,N):
+ while N<=r:N+=1-V[k];k+=1;
+ return k-1
+def B(r,V,M):
+ k=C(r,V,M[0],0)
+ V[k]=1
+ while V[M[0]]:M[0]+=1
+ return k
+j.dump(dict(zip(I,[J[i]for i in reduce(lambda x,y:x+L(M(len(x).__add__,y)),L(M(lambda x:[B(r,x[1],x[2])for r in(A(x[0],j)for j in range(len(x[1])-2,-1,-1))],L(M(lambda y:([y[0]],[0]*(y[1]+1),[0]),L(M(lambda t:L(M(lambda u:D(T[D(u)]),t.split("ÿ"))),r"$ÿ#ş&ÿ%ş$ÿ'ş$ÿ(ş*ÿ)ş,ÿ+ş.ÿ-ş0ÿ/ş2ÿ1ş2ÿ3ş5ÿ4ş7ÿ6ş9ÿ8ş:ÿ2ş<ÿ;".split("ş"))))))))])),open(O,"w"))
