@@ -1,9 +1,9 @@
 # Smart EC: Program-Building for Name Mapping
 The original 3rd place solution to the 2018 ICCAD Problem A: Smart-EC.
 
-After fixing a bug due to an uncleared definition in the problem definition, the program has similar performances as the 1st place.
+After fixing a bug (due to an uncleared definition of 1-to-1 mapping in the problem definition), the program has similar performances as the 1st place.
 
-The problem definition is described [here](https://github.com/Daikon-Sun/Smart-EC/blob/master/ProbDef.pdf).
+The problem definition is [here](https://github.com/Daikon-Sun/Smart-EC/blob/master/ProbDef.pdf).
 
 ## Required Packages and Versions
 - python3 >= 3.4.5
