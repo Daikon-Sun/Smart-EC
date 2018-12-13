@@ -1,5 +1,9 @@
 # Smart EC: Program-Building for Name Mapping
-The original 3rd Place solution to the 2018 ICCAD Problem A: Smart-EC.
+The original 3rd place solution to the 2018 ICCAD Problem A: Smart-EC.
+
+After fixing a bug due to an uncleared definition in the problem definition, the program has similar performances as the 1st place.
+
+The problem definition is described [here](https://github.com/Daikon-Sun/Smart-EC/blob/master/ProbDef.pdf).
 
 ## Required Packages and Versions
 - python3 >= 3.4.5
@@ -8,6 +12,7 @@ The original 3rd Place solution to the 2018 ICCAD Problem A: Smart-EC.
 - main.py: the main program
 - testcases: all cases in the contest
 - outputs: all generated python scripts
+- ProbDef.pdf: problem definition.
 
 ## Usage
 ```
@@ -15,7 +20,9 @@ python3 main.py input_json output_py
 ```
 
 ## Example
-Check out the script `run.sh`.
+Check out the script `run.sh`, which needs two arguments.
+
+The first argument is the id of the testcase, and the second argument is the name of the output python script.
 
 ## Results
 | Testcases | Size of Script |
